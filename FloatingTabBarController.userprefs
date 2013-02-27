@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="FloatingTabBarController/FloatingTabBarController.cs">
     <Files>
-      <File FileName="FloatingTabBarController/FloatingTabBarController.cs" Line="16" Column="34" />
+      <File FileName="FloatingTabBarController/FloatingTabBarController.cs" Line="40" Column="31" />
       <File FileName="FloatingTabBarControllerDemo/AppDelegate.cs" Line="34" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
