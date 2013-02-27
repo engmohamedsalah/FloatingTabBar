@@ -5,24 +5,26 @@ A view controller that works similarly to the UITabBarController, where the tabs
 
 Usage:
 
-    using FloatingTabBar;
-    ...
-    public override ViewDidLoad ()
-    {
-        base.ViewDidLoad ();
+```c#
+using FloatingTabBar;
+...
+public override ViewDidLoad ()
+{
+    base.ViewDidLoad ();
 
-        var ftbc = new FloatingTabBarController () {
-            TabTitles = new List<string> () {
-                "Tab 1",
-                "Tab 2",
-                "Tab 3"
-            },
-            ViewControllers = new List<UIViewController> () {
-                new UIViewController (), // Tab 1
-                new UIViewController (), // Tab 2
-                new UIViewController ()  // Tab 3
-            }
-        };
+    var ftbc = new FloatingTabBarController () {
+        TabTitles = new List<string> () {
+            "Tab 1",
+            "Tab 2",
+            "Tab 3"
+        },
+        ViewControllers = new List<UIViewController> () {
+            new UIViewController (), // Tab 1
+            new UIViewController (), // Tab 2
+            new UIViewController ()  // Tab 3
+        }
+    };
 
-        View.AddSubview (ftbc.View);
-    }
+    View.AddSubview (ftbc.View);
+}
+```
