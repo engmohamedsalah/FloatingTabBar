@@ -1,7 +1,9 @@
 FloatingTabBar
 ========================
 
-A view controller that works similarly to the UITabBarController, where the tabs float above the corresponding view controllers.
+FloatingTabBarController is a view controller that works similarly to the UITabBarController, where the tabs float above the corresponding view controllers.
+
+![screenshot](http://jonathannesbitt.com/images/FloatingTabBarSample_Map.png "Sample") 
 
 Usage:
 
