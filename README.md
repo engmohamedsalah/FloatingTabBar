@@ -18,9 +18,9 @@ Usage:
                 "Tab 3"
             },
             ViewControllers = new List<UIViewController> () {
-                new UIViewController (),
-                new UIViewController (),
-                new UIViewController ()
+                new UIViewController (), // Tab 1
+                new UIViewController (), // Tab 2
+                new UIViewController ()  // Tab 3
             }
         };
 
