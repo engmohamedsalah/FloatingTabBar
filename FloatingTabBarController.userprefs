@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FloatingTabBarController/FloatingTabBarController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FloatingTabBarControllerDemo/AppDelegate.cs">
     <Files>
-      <File FileName="FloatingTabBarController/FloatingTabBarController.cs" Line="101" Column="5" />
-      <File FileName="FloatingTabBarControllerDemo/AppDelegate.cs" Line="34" Column="4" />
+      <File FileName="FloatingTabBarController/FloatingTabBarController.cs" Line="93" Column="17" />
+      <File FileName="FloatingTabBarControllerDemo/AppDelegate.cs" Line="52" Column="138" />
+      <File FileName="FloatingTabBarControllerDemo/Main.cs" Line="18" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
