@@ -48,10 +48,11 @@ namespace FloatingTabBarSample
             };
 
             // Create the 'Atlanta' tab.
-            var mapView = new MKMapView (new RectangleF (0, -20, window.Bounds.Width, window.Bounds.Height));
+            var mapView = new MKMapView (UIScreen.MainScreen.Bounds);
             var atlanta = new MKCoordinateRegion (new CLLocationCoordinate2D (33.748893, -84.388046), new MKCoordinateSpan (0.35, 0.35));
             mapView.SetRegion (atlanta, false);
             mapViewController = new UIViewController ();
+            mapViewController.View.Bounds = UIScreen.MainScreen.Bounds;
             mapViewController.View.AddSubview (mapView);
 
             // Create and display the floating tab bar controller.

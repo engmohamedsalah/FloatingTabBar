@@ -101,9 +101,7 @@ namespace FloatingTabBar
                     button.Frame = new RectangleF (currentWidth, 0, button.Frame.Width, button.Frame.Height);
                     currentWidth += button.Frame.Width;
                 }
-                
                 tabView.Frame = new RectangleF ((View.Center.X - (tabWidth / 2)), 20, tabWidth, tabButtons [0].Frame.Height);
-                
                 SelectTab (selectedTabIndex);
             }
         }
@@ -112,24 +110,26 @@ namespace FloatingTabBar
         {
             if ((viewControllers == null) || (viewControllers.Count <= index) || (index < 0) || (viewControllers [index] == null))
                 return;
-            
+
+            // Updated selected view controller.
             SelectedIndex = index;
             SelectedViewController = viewControllers [index];
-            View.InsertSubviewBelow (SelectedView, tabView);
+            this.View.AddSubview (SelectedView);
             
             // Update selected tab.
+            tabView.RemoveFromSuperview ();
             foreach (var button in tabButtons) {
                 button.BackgroundColor = UIColor.White;
                 button.SetTitleColor (UIColor.FromRGB (71, 71, 71), UIControlState.Normal);
             }
             tabButtons [SelectedIndex].BackgroundColor = UIColor.FromRGB (71, 71, 71);
             tabButtons [SelectedIndex].SetTitleColor (UIColor.White, UIControlState.Normal);
+            SelectedView.AddSubview (tabView);
         }
         
         public FloatingTabBarController ()
         {
             tabView = new UIView (new RectangleF (View.Center.X, 20, 0, 0));
-            View.AddSubview (tabView);
             tabButtons = new List<UIButton> ();
         }
     }
