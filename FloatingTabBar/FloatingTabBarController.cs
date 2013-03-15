@@ -67,7 +67,12 @@ namespace FloatingTabBar
         void Refresh ()
         {
             if ((tabTitles != null) && (tabTitles.Count > 0)) {
-                
+
+                // Clear tabs.
+                foreach (var view in tabView.Subviews) {
+                    view.RemoveFromSuperview ();
+                }
+
                 // Create tab buttons.
                 tabButtons.Clear ();
                 tabWidth = 0;
